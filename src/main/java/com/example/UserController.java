@@ -8,7 +8,7 @@ public class UserController {
     }
 
     public void registerUser() {
-        userService.createUser(1, "Kalhara", "kalhara@example.com", "0771234567");
+        userService.createUser(1, "Kalhara", "kalhara@example.com");
     }
 
     public void changeEmail() {
@@ -18,10 +18,8 @@ public class UserController {
     public void showUser() {
         User user = userService.getUser(1);
         if (user != null) {
-            
+            System.out.println(user.getName());
             System.out.println(user.getEmail());
-            System.out.println(user.getNo());
-            
         }
     }
 }
