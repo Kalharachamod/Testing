@@ -18,7 +18,8 @@ public class UserController {
     public void showUser() {
         User user = userService.getUser(1);
         if (user != null) {
-            System.out.println(user.getName());
+            
+            System.out.println(user.getEmail());
             
         }
     }
