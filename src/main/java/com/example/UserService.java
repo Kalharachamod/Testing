@@ -7,8 +7,8 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public void createUser(int id, String name, String email) {
-        User user = new User(id, name, email);
+    public void createUser(int id, String name, String email, String no) {
+        User user = new User(id, name, email, no);
         userRepository.save(user);
     }
 
