@@ -20,8 +20,6 @@ public class UserController {
         if (user != null) {
             System.out.println(user.getName());
             System.out.println(user.getEmail());
-            System.out.println(user.getId());
-
         }
     }
 }
